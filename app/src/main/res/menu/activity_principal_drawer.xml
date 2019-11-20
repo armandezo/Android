@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Principal">
+        <menu>
+            <item
+                android:id="@+id/principal"
+                android:title="Pantalla Principal"
+                android:icon="@mipmap/ic_launcher_home"
+                />
+            <item
+                android:id="@+id/nuevo"
+                android:title="Nuevo Producto"
+                android:icon="@mipmap/ic_launcher_nuevo"/>
+
+        </menu>
+    </item>
+
+    <item android:title="Categorias">
+        <menu>
+            <item
+                android:id="@+id/frutas"
+                android:icon="@mipmap/ic_launcher_repoc"
+                android:title="Parrilla" />
+            <item
+                android:id="@+id/verduras"
+                android:icon="@mipmap/ic_launcher_repoc"
+                android:title="Cilindro" />
+            <item
+                android:id="@+id/secos"
+                android:icon="@mipmap/ic_launcher_repoc"
+                android:title="Cocina" />
+
+
+        </menu>
+    </item>
+
+    <item android:title="Reportes">
+        <menu>
+            <item
+                android:id="@+id/repo"
+                android:icon="@mipmap/ic_launcher_repoc"
+                android:title="Reporte Completo" />
+            <item
+                android:id="@+id/repospecial"
+                android:icon="@mipmap/ic_launcher_repo"
+                android:title="Reporte Especial" />-->
+            <item
+                android:id="@+id/EnviaReporte"
+                android:icon="@mipmap/ic_launcher_send"
+                android:title="Enviar Reporte"/>
+        </menu>
+    </item>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Acercade"
+            android:icon="@mipmap/ic_launcher_acercade"
+            android:title="Acerca de"/>
+    </group>
+</menu>

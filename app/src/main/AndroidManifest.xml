@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.inventariostap.mario.controldeinventarios">
+
+    <!-- PERMISOS Y COMPATIBILIDAD CON VERSIONES SUPERIORES A ANDROID 6 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- PERMITIR LEER EL ESTADO ACTUAL DEL TELEFONO -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- ESCRIBIR ARCHIVOS EN LA MEMORIA EXTERNA -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- LEER ARCHIVOS EN LA SD -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- PERMISO PARA MANIPULAR LA CAMARA -->
+    <uses-permission android:name="android.permission.SEND_SMS" /> <!-- PERMISO PARA ENVIAR SMS -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- PERMISO PARA TENER ACCESO ÍNTEGRO A INTERNET -->
+    <protected-broadcast android:name="android.intent.action.MEDIA_MOUNTED" />
+
+    <uses-feature
+        android:name="android.hardware.Camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_iconop"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_iconop"
+        android:supportsRtl="true"
+        android:screenOrientation="locked"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Principal"
+            android:label="@string/app_name"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"  android:screenOrientation="locked"/>
+
+                <category android:name="android.intent.category.LAUNCHER"  android:screenOrientation="locked"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Frutas"
+            android:label="Frutas"
+            android:screenOrientation="portrait" />
+
+        <!--
+        SEGUNDA VERSIÓN
+        <activity android:name=".ReporteEspecial" 
+            android:label="Reporte Especial"
+            android:screenOrientation="portrait"/>
+        
+        <activity android:name=".ReporteGeneral" 
+            android:label="Reporte General"
+            android:screenOrientation="portrait"/>
+        -->
+
+        <activity
+            android:name=".Verduras"
+            android:label="Verduras"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Secos"
+            android:label="Secos"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AgregarArticulo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Acercade"
+            android:label="Acerca de"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".Edit" />
+
+        <activity android:name=".Enviar"
+            android:label="Enviar Reporte"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>
